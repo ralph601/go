@@ -11,7 +11,6 @@ func sum(numbers ...int) int{
 }
 
 func main(){
-	//var inhaArray [7] string //array
 //	var inhaSlice [] string //slice
 //	inhaSlice = make([]string, 7)
 	inhaSlice := []string{"i","n","h","a" }
