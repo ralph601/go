@@ -20,6 +20,10 @@ func defaultSubscriber(name string) subscriber{
 	s.active=true
 	return s
 }
+func applyDiscount(s *subscriber){
+	s.rate=4000
+}
+
 func main() {
 	s1 :=defaultSubscriber("kim")
 	s1.rate=4500
@@ -27,5 +31,9 @@ func main() {
 
 	s2 :=defaultSubscriber("park")
 	printInfo(s2)
+
+	var s3 subscriber
+	applyDiscount(&s3)
+	fmt.Println(s3.rate)
 
 }
